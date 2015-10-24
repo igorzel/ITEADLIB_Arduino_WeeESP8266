@@ -197,7 +197,7 @@ develop and test library code at PC. Currently just small part of methods covere
 with tests.
 
 Example of using (tested under Linux only):
-  - $git clone "https://github.com/..correct.path../ITEADLIB_Arduino_WeeESP8266.git" Arduino_ESP8266
+  - $git clone https://github.com/..path.here../ITEADLIB_Arduino_WeeESP8266.git Arduino_ESP8266
   - $mkdir Arduino_ESP8266_build
   - $cd Arduino_ESP8266_build
   - $cmake ../Arduino_ESP8266
