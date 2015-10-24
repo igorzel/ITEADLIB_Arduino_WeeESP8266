@@ -19,7 +19,15 @@
  * THE SOFTWARE.
  */
 #include "ESP8266.h"
+
+#ifdef UNIT_TEST
+#include "tests/arduinoMock/Mock_Arduino.h"
+#include "tests/arduinoMock/Mock_Serial.h"
+#include "tests/arduinoMock/String.h"
+#else
 #include <avr/pgmspace.h>
+#endif
+
 
 #define LOG_OUTPUT_DEBUG            (1)
 #define LOG_OUTPUT_DEBUG_PREFIX     (1)

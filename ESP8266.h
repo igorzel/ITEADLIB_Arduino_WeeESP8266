@@ -21,7 +21,16 @@
 #ifndef __ESP8266_H__
 #define __ESP8266_H__
 
+#ifdef UNIT_TEST
+#include "tests/arduinoMock/Mock_Arduino.h"
+#include "tests/arduinoMock/Mock_Serial.h"
+#include "tests/arduinoMock/String.h"
+#else
 #include "Arduino.h"
+#endif
+
+
+
 
 //#define ESP8266_USE_SOFTWARE_SERIAL
 

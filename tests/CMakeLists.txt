@@ -1,0 +1,2 @@
+add_subdirectory(arduinoMock)
+add_subdirectory(ESP8266_tests)

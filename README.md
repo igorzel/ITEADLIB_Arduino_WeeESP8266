@@ -190,6 +190,23 @@ See the follow line in the HardwareSerial.h file.
 The default size of the buffer is 64. Change it into a bigger number, like 256 or more.
 
 
+# Hacking
+
+The library supports unit tests using Google Tests and Google Mock. It allows to
+develop and test library code at PC. Currently just small part of methods covered
+with tests.
+
+Example of using (tested under Linux only):
+  - $git clone "https://github.com/..correct.path../ITEADLIB_Arduino_WeeESP8266.git" Arduino_ESP8266
+  - $mkdir Arduino_ESP8266_build
+  - $cd Arduino_ESP8266_build
+  - $cmake ../Arduino_ESP8266
+  - $make
+  - Run one of:
+    - $./tests/ESP8266_tests/ESP8266_tests
+    - $make test
+
+
 -------------------------------------------------------------------------------
 
 # The End!
